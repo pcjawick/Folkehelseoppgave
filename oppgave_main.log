@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.22)  27 OCT 2013 00:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.22)  27 OCT 2013 01:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -828,6 +828,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
 [3] (./oppgave_main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 1.
@@ -835,10 +845,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <./fhprofilnek.jpg, id=102, 433.11812pt x 172.645pt>
 File: ./fhprofilnek.jpg Graphic file (type jpg)
  <use ./fhprofilnek.jpg>
-Package pdftex.def Info: ./fhprofilnek.jpg used on input line 58.
+Package pdftex.def Info: ./fhprofilnek.jpg used on input line 62.
 (pdftex.def)             Requested size: 317.98755pt x 126.7595pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
  []
 
@@ -846,7 +856,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
 
  <./fhprofilnek.jpg>]
-Overfull \hbox (4.88097pt too wide) in paragraph at lines 70--71
+Overfull \hbox (4.88097pt too wide) in paragraph at lines 74--75
 [][] \OT1/cmr/m/n/10.95 I v^^War kom-mune jobbes det for tiden med en folke-hel
 se-plan slik det er beskrevet
  []
@@ -854,46 +864,105 @@ se-plan slik det er beskrevet
 <./hpr_logo.jpg, id=114, 401.5pt x 355.3275pt>
 File: ./hpr_logo.jpg Graphic file (type jpg)
  <use ./hpr_logo.jpg>
-Package pdftex.def Info: ./hpr_logo.jpg used on input line 74.
+Package pdftex.def Info: ./hpr_logo.jpg used on input line 78.
 (pdftex.def)             Requested size: 289.07999pt x 255.85185pt.
 
 Underfull \vbox (badness 1430) has occurred while \output is active []
 
  [2 <./hpr_logo.jpg>]
-Overfull \hbox (27.75555pt too wide) in paragraph at lines 84--85
+Overfull \hbox (27.75555pt too wide) in paragraph at lines 88--89
 [][] \OT1/cmr/m/n/10.95 - Folke-helsen i Norge er bedre en noen gang, innleder 
 rap-porten om utviklingstrekk
  []
 
 [3] [4
 
-]
-Overfull \hbox (7.88335pt too wide) in paragraph at lines 95--96
-\OT1/cmr/m/n/10.95 mer er ^^Wa f^^Wa flere i ak-tivitet. Dette er et ut-talt m^
-^Wal fra Folkehelsinstituttet(FHI)[[]]
+] <./bikeuk.jpg, id=145, 4015.0pt x 2258.4375pt>
+File: ./bikeuk.jpg Graphic file (type jpg)
+ <use ./bikeuk.jpg>
+Package pdftex.def Info: ./bikeuk.jpg used on input line 102.
+(pdftex.def)             Requested size: 325.215pt x 182.91866pt.
+
+Overfull \hbox (19.4417pt too wide) in paragraph at lines 99--108
+\OT1/cmr/m/n/10.95 mer er ^^Wa f^^Wa flere i aktivitet[[]]. Dette er et ut-talt
+ m^^Wal fra Folkehelsinstituttet(FHI)[[]]
  []
 
-[5]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./bikeuk.jpg>] <./andsmi.jpg, id=159, 224.33812pt x 226.34563pt>
+File: ./andsmi.jpg Graphic file (type jpg)
+ <use ./andsmi.jpg>
+Package pdftex.def Info: ./andsmi.jpg used on input line 117.
+(pdftex.def)             Requested size: 289.07999pt x 291.69695pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Class memoir Warning: The material used in the headers is too large
 (13.6202pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 104.
+(in both cases you will find help in the memoir manual). on input line 125.
 
-[6] [7
+[6] [7 <./andsmi.jpg>] [8
 
-] [8
+]
+
+LaTeX Warning: Citation `faktfhfig' on page 9 undefined on input line 128.
+
+<./faktfh.jpg, id=177, 428.60126pt x 289.08pt>
+File: ./faktfh.jpg Graphic file (type jpg)
+ <use ./faktfh.jpg>
+Package pdftex.def Info: ./faktfh.jpg used on input line 131.
+(pdftex.def)             Requested size: 289.07999pt x 194.97942pt.
+
+Overfull \hbox (16.25806pt too wide) in paragraph at lines 138--139
+[][] \OT1/cmr/m/n/10.95 Kom-munen har et en-gas-je-ment i frisklivssen-tralen s
+om det er vik-tig ^^Wa videref^^\re,
+ []
+
+[9 <./faktfh.jpg>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 143.
+
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 143.
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 144--145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+[10] [11] [12
 
 ]
 bibitemlist
 
-Underfull \hbox (badness 5741) in paragraph at lines 113--116
+Underfull \hbox (badness 5741) in paragraph at lines 159--162
 []\OT1/cmr/m/n/10.95 Helse- og Om-sorgs-de-parte-mentet, \OT1/cmr/m/it/10.95 St
 ort-ingsmeld-ing 47, 06/2009,
  []
 
 
-Underfull \hbox (badness 4242) in paragraph at lines 138--141
+Underfull \hbox (badness 4242) in paragraph at lines 184--187
 []\OT1/cmr/m/n/10.95 Folkehelserapport 2010 Helsetil-standen i Norge \OT1/cmr/m
 /it/10.95 Folke-hel-se-in-sti-tut-
  []
@@ -902,40 +971,45 @@ Underfull \hbox (badness 4242) in paragraph at lines 138--141
 Class memoir Warning: The material used in the headers is too large
 (13.6202pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 149.
+(in both cases you will find help in the memoir manual). on input line 205.
 
-[9]
+[13]
 \tf@toc=\write5
 \openout5 = `oppgave_main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
  (./oppgave_main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 205.
 Package rerunfilecheck Info: File `oppgave_main.out' has not changed.
-(rerunfilecheck)             Checksum: BDFBBA7FD83DD22CE73D6A7673B0D5B7;943.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+(rerunfilecheck)             Checksum: 54DDCA4701671E35126A34EFAE49C294;943.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 205.
  ) 
 Here is how much of TeX's memory you used:
- 9862 strings out of 493315
- 144664 string characters out of 6137904
- 259567 words of memory out of 5000000
- 13202 multiletter control sequences out of 15000+600000
+ 9916 strings out of 493315
+ 145452 string characters out of 6137904
+ 260567 words of memory out of 5000000
+ 13236 multiletter control sequences out of 15000+600000
  11022 words of font info for 38 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,12n,38p,750b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,38p,845b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on oppgave_main.pdf (13 pages, 270630 bytes).
+ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on oppgave_main.pdf (17 pages, 1592223 bytes).
 PDF statistics:
- 215 PDF objects out of 1000 (max. 8388607)
- 189 compressed objects within 2 object streams
- 49 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.22)  27 OCT 2013 00:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.7.22)  27 OCT 2013 00:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -867,39 +867,64 @@ rap-porten om utviklingstrekk
 
 [3] [4
 
-] [5] [6
+]
+Overfull \hbox (7.88335pt too wide) in paragraph at lines 95--96
+\OT1/cmr/m/n/10.95 mer er ^^Wa f^^Wa flere i ak-tivitet. Dette er et ut-talt m^
+^Wal fra Folkehelsinstituttet(FHI)[[]]
+ []
 
-] [7] [8
+[5]
+
+Class memoir Warning: The material used in the headers is too large
+(13.6202pt) for the given head height (13.6pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 104.
+
+[6] [7
+
+] [8
 
 ]
 bibitemlist
 
-Underfull \hbox (badness 5741) in paragraph at lines 109--112
+Underfull \hbox (badness 5741) in paragraph at lines 113--116
 []\OT1/cmr/m/n/10.95 Helse- og Om-sorgs-de-parte-mentet, \OT1/cmr/m/it/10.95 St
 ort-ingsmeld-ing 47, 06/2009,
  []
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 138--141
+[]\OT1/cmr/m/n/10.95 Folkehelserapport 2010 Helsetil-standen i Norge \OT1/cmr/m
+/it/10.95 Folke-hel-se-in-sti-tut-
+ []
+
+
+Class memoir Warning: The material used in the headers is too large
+(13.6202pt) for the given head height (13.6pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 149.
 
 [9]
 \tf@toc=\write5
 \openout5 = `oppgave_main.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
  (./oppgave_main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `oppgave_main.out' has not changed.
-(rerunfilecheck)             Checksum: E5793156779A38834EF33A4435C995CB;943.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
+(rerunfilecheck)             Checksum: BDFBBA7FD83DD22CE73D6A7673B0D5B7;943.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 9855 strings out of 493315
- 144591 string characters out of 6137904
+ 9862 strings out of 493315
+ 144664 string characters out of 6137904
  259567 words of memory out of 5000000
- 13199 multiletter control sequences out of 15000+600000
+ 13202 multiletter control sequences out of 15000+600000
  11022 words of font info for 38 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,10n,38p,679b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,12n,38p,750b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
@@ -907,10 +932,10 @@ usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
 local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/l
 ocal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on oppgave_main.pdf (13 pages, 267567 bytes).
+Output written on oppgave_main.pdf (13 pages, 270630 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 189 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

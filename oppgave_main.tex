@@ -1,5 +1,5 @@
 
-\documentclass[11pt]{memoir} % use larger type; default would be 10pt
+\documentclass[12pt]{memoir} % use larger type; default would be 10pt
 
 
 %inkluderte pakker
@@ -7,7 +7,9 @@
 \usepackage{hyperref}
 \usepackage{paralist}
 \usepackage{graphicx}
-\usepackage[margin=8pt,font=small,labelfont=bf]{caption}
+\usepackage[margin=8pt,labelfont=bf]{caption}
+
+
 
 %slutt på pakkene
 
@@ -18,17 +20,53 @@
 
 \begin{document}
 %%Her begynner oversettelsen til norsk
-			\renewcommand{\chaptername}{Del}
+			      \renewcommand{\chaptername}{Del}
             \renewcommand{\contentsname}{Innhold}
             \renewcommand\listfigurename{Illustrasjoner}
             \renewcommand\tablename{Tabell}
-			\renewcommand\listtablename{Tabeller}
+			      \renewcommand\listtablename{Tabeller}
             \renewcommand{\figurename}{Illustrasjon}
 
 %%Her slutter den
 \frontmatter
+%Grafisk Forside
 
-\maketitle
+\newcommand\nbvspace[1][3]{\vspace*{\stretch{#1}}}
+% allow some slack to avoid under/overfull boxes
+\newcommand\nbstretchyspace{\spaceskip0.5em plus 0.25em minus 0.25em}
+% To improve spacing on titlepages
+\newcommand{\nbtitlestretch}{\spaceskip0.6em}
+\pagestyle{empty}
+\begin{center}
+\bfseries
+\nbvspace[1]
+\Huge
+{\nbtitlestretch\huge
+Prosjektoppgave}
+
+\nbvspace[1]
+\normalsize
+
+Obligatorisk innlevering før\\
+Samfunnsmedisinkurs C\\
+\nbvspace[1]
+\small av\\
+\Large Pål Ager- Wick\\[0.5em]
+\footnotesize Kommuneoverlege\\
+
+\nbvspace[2]
+
+\includegraphics[width=6in]{./anitascotland.jpg}
+\nbvspace[3]
+\normalsize
+
+Mjøndalen\\
+\large
+27.10.2013\\
+\nbvspace[1]
+\end{center}
+
+%Slutt grafisk forside
 
 \chapter{Forord til oppgaven}
 	Jeg skriver her et kort forord fordi jeg har langt overskredet sidetallet som var satt til to sider. Det er i størst grad fordi jeg velger å skrive dokumenter i et spesielt format som gjør dem mer leservennlige og lettere å disponere når man skal skrive. Jeg tror derfor at oppgaven, selv om den er på betydelig mer enn to sider, likvel vil tilsvare omlag 2 tettskrevne A4 sider.\\
@@ -37,11 +75,11 @@
 
 	Det finnes en fullstendig versjonsoversikt som er åpent tilgjengelig på \href{http://pcjawick.github.io/Folkehelseoppgave}{GitHub}. Her kan du laste ned hele prosjektet og finne lenke til versjonsoversikten.\\
 
-	Til slutt tillater jeg meg en tilbakemelding om at denne oppgaveteksten, som i seg selv var på 1/2 A4 side, vanskelig kan komme under 2 A4 sider på en meningsfull måte.\\[1in]
+	Til slutt tillater jeg meg en tilbakemelding om at denne oppgaveteksten, som i seg selv var på 1/2 A4 side, vanskelig kan komme under 2 A4 sider på en meningsfull måte.\\[0.7in]
 
 
 
-DRAMMEN 26.10.2013\\[0.5in]
+DRAMMEN 26.10.2013\\[0.4in]
 
 Pål CJ Ager-Wick
 
@@ -53,8 +91,8 @@ Pål CJ Ager-Wick
 
 \chapter{Utfordringer for Nedre Eiker kommune}
 	\section{Folkehelseprofilen}
-		\paragraph{}
-			Som tidligere allmennlege tok det tid før folkehelsebegrepet ble konkret for meg. Som så ofte med begrep som favner mange samfunnsområder og er vanskelige å definere med få ord, strøs "Folkehelse" omkring som et prydord i taler og slagord i valgkamper. Da vi fikk folkehelseprofilene i 2012 kom bakkekontakten og derfor velger jeg å begynne der.  
+		\paragraph{Didaktisk sukker\\}
+			Som relativt fersk lege tok det litt tid før folkehelsebegrepet ble konkret. Som så ofte med vendinger som favner mange samfunnsområder og er vanskelige å definere med få ord, strøs "Folkehelse" omkring som et prydord i taler og som slagord i valgkamper. Da vi fikk folkehelseprofilene i 2012 ble alt litt nærmere også for kommuneadministratorene.  
 %Her begynner grafikken
 
                     \begin{figure}[ht]
@@ -62,16 +100,18 @@ Pål CJ Ager-Wick
                       	\frame{\includegraphics[width=4.4in]{./fhprofilnek.jpg}}%utklipp fra fh profilen 2013
                       \captionsetup{singlelinecheck=off}
                       \caption{Utdrag fra folkehelseprofilen i Nedre Eiker}
-                      {Figuren viser et utdrag fra folkehelseprofilen i Nedre Eiker. Her er det mye å ta fatt i, men det skyldes det selektive utsnittet. Jeg ønsker å vise at folkehelseprofilen kan være vanskelig å bruke som datagrunnlag med et så mangfoldig problemområde. Omvendt kan de positive trendene være falsk positive av på grunn av metodene eller befolkningssammensetningen.\cite{fhprofil}}\label{fhprofilnekbilde}%\textit{tjenestetilbudene}.]
+                      {Figuren viser et utdrag fra folkehelseprofilen i Nedre Eiker\cite{fhprofil}}\label{fhprofilnekbilde}.%\textit{tjenestetilbudene}.]
                     \end{figure}    
 
 %Her slutter grafikken
+  \paragraph{Ikke uten problemer\\}
+    Folkehelseprofilen kan være vanskelig å bruke som datagrunnlag. Både positive og negative trender blir fort tabloide i møtet med politikere og media. Nytteverdien kan likevel være god dersom det brukes systematisk. Det jobbes på spreng i flere kommuner for å få implementert de nye \cite{Folkehelseloven} lovkrav. Å ha en folkehelseplan er ikke eksplisitt lovpålagt, men paragrafene 5-7 i Folkehelseloven blir vanskelige å innføre uten å lage en plan. 
 		
 	\section{Eksisterende planverk}
-		\paragraph{}
-			Det er viktig å danne seg et bilde av eksisterende planverk og hvilke tiltak som allerede jobber inn mot samme område. Det har gått lang tid siden Ottawa charteret\cite{ottawa} ble skrevet, men de grunnleggende elementene forblir de samme. De grunnleggende behovene for helse er like gyldige i dag og er i stor grad integrert i internasjonal politikk. Det er blitt etablert at mat, husly, utdannelse og fred er universelle suksessfaktorer for å kunne være et suksessrikt samfunn, men også for god livskvalitet. Og ved stikkordet livskvalitet er vi kommet til måleenheten for folkehelsearbeid, og kanskje også vnalig helsearbeid.\\
-		\paragraph{}
-			I vår kommune jobbes det for tiden med en folkehelseplan slik det er beskrevet i folkehelseloven\cite{Folkehelseloven}. Her er arvematrialet fra Ottawa charteret\cite{ottawa} godt synlig, med tverfaglig jobbing som et sentralt tema. 
+		\paragraph{Universelle verdier\\}
+			Det har gått lang tid siden Ottawa charteret\cite{ottawa} ble skrevet, men de grunnleggende elementene forblir de samme. De grunnleggende behovene for helse er like gyldige i dag og er i stor grad integrert i internasjonal politikk. Det er blitt etablert at mat, husly, utdannelse og fred er universelle suksessfaktorer for å kunne være et suksessrikt samfunn, men også for god livskvalitet. Og ved stikkordet livskvalitet er vi kommet til måleenheten for folkehelsearbeid.\\
+		\paragraph{Med fornemme gener\\}
+			I vår kommune jobbes det for tiden med en folkehelseplan slik det er beskrevet i folkehelseloven\cite{Folkehelseloven}. Her er arvematrialet fra Ottawa charteret\cite{ottawa} godt synlig, med tverrfaglig jobbing som et sentralt tema. Det gjør at arbeidet med en oversikt over det eksisterende arbeidet i kommunen er en nødvendig forutsetning for å lykkes med en folkehelseplan\cite{andsmi}. At en sentral komponent i planen er en oversikt over alle planer både med- og uten folkehelsearbeid vil gjøre den mer relevant som arbeidsverktøy.
 
 			  \begin{figure}[h]
                       \centering
@@ -80,22 +120,22 @@ Pål CJ Ager-Wick
                       \caption{Arbeidsprinsipp fra Ottwacharteret}
                       %\textit{tjenestetilbudene}.]
                     \end{figure}   
-        \paragraph{}
-        	I vårt planverk har vi i dag flere planer som sneier innom folkehelsearbeid. Folkehelsearbeidet skal jo være tverrfaglig og "i alt vi gjør", men forløpig er det lite helt håndfast. Vår største satsing er i samarbeid med nabokommunen med frisklivssentralen "Aktiv Eiker". Disse driver folkehelsearbeid med kommunens befolkning hver dag og er blitt synonymt med folkehelse i kommunen. Utfordringer er å flytte fokuset videre utover alle de kommunale tjenestene.
+        \paragraph{Aktiv Eiker\\}
+        	I vårt planverk har vi i dag flere planer som sneier innom folkehelsearbeid. Vår største satsing er i samarbeid med nabokommunen med frisklivssentralen "Aktiv Eiker". Disse driver folkehelsearbeid med kommunens befolkning hver dag og er blitt synonymt med folkehelse i kommunen. Utfordringer er å flytte fokuset videre utover alle de kommunale tjenestene.
 
 	\section{Hvordan virkeligheten ser ut}
-		\paragraph{}
-			- Folkehelsen i Norge er bedre en noen gang, innleder rapporten om utviklingstrekk i folkehelsearbeidet\cite{Utvtrekk}. Likevel er det tydelig å lese at vi ikke lykkes i arbeidet med å utjevne sosiale forkjeller. Dette medfører forkjeller i levealder og livskvalitet som kanskje kunne vært endret dersom vi legger forholdene til rette. Jeg vil ta en liten politisk ekskursjon før jeg kommer tilbake til Nedre Eikers virkelighet.
+		\paragraph{Sosiale forskjeller og minoriteter\\}
+			- Folkehelsen i Norge er bedre en noen gang, innleder rapporten om utviklingstrekk i folkehelsearbeidet\cite{Utvtrekk}. Likevel er det tydelig å lese at vi ikke lykkes i arbeidet med å utjevne sosiale forkjeller og at flere grupper i samfunnet marginaliseres. Dette medfører forskjeller i levealder og livskvalitet som kanskje kunne vært endret dersom vi legger forholdene til rette. Jeg vil ta en liten politisk ekskursjon før jeg kommer tilbake til Nedre Eikers virkelighet.
 
-		\paragraph{}
-			Her ligger noe av utfordringen slik jeg ser det: Det er mye politikk i folkehelsearbeidet, særlig på den internasjonale arena. I dagens politiske klima er egalitetstankegangen utfordret av liberalismen. Finanskrisens etterspill er gode eksempler på det, med systematisk nedbygging av det offentlige. Samtidig uthules det statlige finansapparatet med "Quantitative easing", et begrep som brukes om statens evne til å trykke penger for å motvirke markedenes reduserte verdi. Disse makroøkonomiske mekanismene utgjør en stor og reel trussel mot folkehelsa i Europa og også indirekte Norge.
+		\paragraph{Den globale utfordringen\\}
+			Det er mye politikk i folkehelsearbeidet, særlig på den internasjonale arena. I dagens politiske klima er egalitetstankegangen utfordret av liberalismen. Finanskrisens etterspill er gode eksempler på det, med systematisk nedbygging av det offentlige. Samtidig uthules det statlige finansapparatet med "Quantitative easing", et begrep som brukes om statens evne til å trykke penger for å motvirke markedenes reduserte verdi. Disse makroøkonomiske mekanismene utgjør en stor og reel trussel mot folkehelsa i Europa og også indirekte Norge. Den langsiktige effekten av nedbyggingen av det offentlige i Portugal, Italia, Spania og Hellas vil Europa leve med i årtier. 
 
-		\paragraph{}
+		\paragraph{Helse- og levevaner\\}
 			Nedre Eikers problemområder er gjengitt på side \pageref{fhprofilnekbilde}. Oppsummert har vi de største utfordringene innen helse og levevaner. Jeg vil i \nameref{chap:fok} gå nærmere inn på hvordan jeg mener man kan arbeide systematisk og tverrfaglig med dette. 
 
 \chapter{Fokusområde: Fysisk helse}\label{chap:fok}
 	\section{Hvorfor fysisk helse?}
-		\paragraph{}
+		\paragraph{Fysisk aktivitet - størst effekt\\}
 			Den mest effektive måten å bekjempe dårlige levevaner og de fleste sykdommer er å få flere i aktivitet\cite{aktivhb}. Dette er et uttalt mål fra Folkehelsinstituttet(FHI)\cite{htnorge} at alle skal være en time mindre inaktive hver dag. Det er mye forskning som tyder på at dette vil være ekstremt gunstig og samtidig billig\cite{aktivhb}.
 					\begin{figure}[h]
                       \centering
@@ -107,12 +147,12 @@ Pål CJ Ager-Wick
                     \end{figure}  
 
 	\section{Hvordan måle effekten}
-		\paragraph{}
-			Å måle effekten er en særlig stor utfordring fordi gevinstene og de harde endpunktene er langt unna. Det vanskelig å måle folkhelseeffektene direkte, men folkehelsen kan sies å være en sum av harde og myke endepunkter. Harde endepunkter er for tidlig død på grunn av psykisk eller somatisk sykdom, myke endepunkter er livskvalitet, utdanningsnivå og trygghet i samfunnet. Det er åpenbart at motivasjonen for en lokalpolitiker til å stemme for noe som kanskje gir gevinst om 10-20 år ikke er høy. Det er dårlig omsatt politisk valuta. 
+		\paragraph{Hvordan måle?\\}
+			Å måle effekten er en særlig stor utfordring fordi gevinstene og de harde endpunktene er langt unna. Selv om de hadde vært nærmere ville det vært vanskelig å få øye på dem. Det vanskelig å måle folkhelseeffektene direkte, men folkehelsen kan sies å være en sum av harde og myke endepunkter. Harde endepunkter er for tidlig død på grunn av psykisk eller somatisk sykdom, myke endepunkter er livskvalitet, utdanningsnivå og trygghet i samfunnet. Det er åpenbart at motivasjonen for en lokalpolitiker til å stemme for noe som kanskje gir gevinst om 10-20 år ikke er høy. Det er dårlig omsatt politisk valuta. 
 	\section{Suksessfaktorer}
-		\paragraph{}
-			Å fokusere på livskvalitet og trivel kan være en god strategi. Pekefingeren gir sjelden ønskede resultat, og kan virke mot sin hensikt. I boken "Nudge: Improving descisions about health, wealth and happiness"\cite{nudge} beskriver Richard Thaler hvordan man kan legge rette for at man som innbygger tar fornuftige avgjørelser som ikke er på bekostning av egen livskvalitet. For eksempel viste de at forsøpling i en bydel i London ble redusert ved at renholderene jobbet om dagen i stedet for om natten\cite{nudge}. At folk så at jobben ble gjort hadde en stor effekt. En norsk pioneer her er Ander Smith som har foreslått å gjøre medlemskap i foreninger og lag fradragsberettiget på skatten\cite{andsmi}(se også illustrasjon \ref{andsmifig}).
-					\begin{figure}[h]
+		\paragraph{Gi et lite dult\\}
+			Å fokusere på livskvalitet og trivel kan være en god strategi, fordi negativ forsterkning ofte fører til at dårlige vaner befester seg. "Nudge" kan oversettes med å gi noen et dult. I boken "Nudge: Improving descisions about health, wealth and happiness"\cite{nudge} beskriver Richard Thaler hvordan man kan legge rette for at man som innbygger tar fornuftige avgjørelser som ikke er på bekostning av egen livskvalitet. For eksempel viste de at forsøpling i en bydel i London ble redusert ved at renholderene jobbet om dagen i stedet for om natten\cite{nudge}. At folk så at jobben ble gjort hadde en stor effekt. En norsk pioneer her er Ander Smith som har foreslått å gjøre medlemskap i foreninger og lag fradragsberettiget på skatten\cite{andsmi}(se også illustrasjon \ref{andsmifig}).
+					\begin{figure}[ht]
                       \centering
                       	\frame{\includegraphics[width=4in]{./andsmi}}%utklipp fra fh profilen 2013
                     	  \captionsetup{singlelinecheck=off}
@@ -124,7 +164,7 @@ Pål CJ Ager-Wick
 
 \chapter{Gjennomføring}
 	\section{Finansiering}
-		\paragraph{}
+		\paragraph{Løsninger i den stramme økonomien\\}
 			Kommuneøkonomien er som kjent relativt stram. For tiltak med mulige langsiktige positive effekter som neppe kan måles på en god måte finnes det lite handlingsrom. Det er derfor godt å se at det gjøres midler tilgjengelig for å satse på for eksempel fysisk aktivitet i et folkehelseperspektiv\ref{faktfhfig}.
 					\begin{figure}[h]
                       \centering
@@ -134,23 +174,25 @@ Pål CJ Ager-Wick
                       	\label{faktfhfig}
                       	%\textit{tjenestetilbudene}.]
                     \end{figure}   
-        \paragraph{}
+        \paragraph{Å ha midler å søke på er helt nødvendig\\}
             Kommunen har et engasjement i frisklivssentralen som det er viktig å videreføre, men slik situasjonen er nå er vi avhengige av å kunne søke midler. Dette er jo forøvrig en god ting sett fra innbyggernes perspektiv.
 	\section{Administrative forutsetninger}
-		\paragraph{}
+		\paragraph{Oppskriften for en god plan\\}
 			Her følger en liste med noen punkter som vi har erfart er viktige for å kunne gjennomføre prosjekter slik som dette:
 				\begin{itemize}
-					\item Målet må være klart formulert. Dette er en forutsetning for at arbeidet skal bli målrettet og alle er på samme side. I tilfellet her vil et mål kunne være: "Gjennom å bruke frisklivssentralen skal man jobbe for å få flere mennesker i alle aldersgrupper i aktivitet i Nedre Eiker. Forprosjektet har som oppgave å utforme en strategi for å kunne tilby aktiviteter til alle grupper i befolkningen. Dette vil være det viktigste tiltaket for å bedre folkehelsa i Nedre Eiker. Strategien skal forankres i kommunestyret og kommunestyret skal være styringsgruppe for prosjektet. Vi ber om et mandat alle politiske partier kan enes om og at dette arbeidet danner ryggraden i folkehelseplanen som er under utarbeidelse."\\
-					\item Forankringen må skje i hele orgasisasjonen. Dette er et område hvor prosjektarbeid i tverrfaglige grupper utmerker seg. Bakdelen er at det hersker en ikke ubetydelig prosjekttretthet i kommunen. Det er mange prosjekter og begrenset med tid til møter.\\
-					\item Folkehelseplanen må foreligge og implementeres i alt kommunalt plan- og saksarbeid.\\
+					\item Målet må være klart formulert. Dette er en forutsetning for at arbeidet skal bli målrettet og alle er på samme side. I tilfellet her vil et mål- eller første del av prosjektbeskrivelsen kunne være: "Gjennom å bruke frisklivssentralen skal man jobbe for å få flere mennesker i alle aldersgrupper i aktivitet i Nedre Eiker. Forprosjektet har som oppgave å utforme en strategi for å kunne tilby aktiviteter til alle grupper i befolkningen. Dette vil være det viktigste tiltaket for å bedre folkehelsa i Nedre Eiker. Strategien skal forankres i kommunestyret og kommunestyret skal være styringsgruppe for prosjektet. Vi ber om et mandat alle politiske partier kan enes om og at dette arbeidet danner ryggraden i folkehelseplanen som er under utarbeidelse."\\
+					\item Forankringen må skje i hele organisasjonen. Dette er et område hvor prosjektarbeid i tverrfaglige grupper utmerker seg. Bakdelen er at det hersker prosjekttretthet i kommunen. Det er mange prosjekter og begrenset med tid til møter.\\
+					\item Folkehelseplanen må foreligge og implementeres i alt kommunalt plan- og saksarbeid. Jfr Folkehelseloven\cite{Folkehelseloven}\\
 					\item Frivillige, fastleger og befolkningen må være med å bære prosjektet.\\
 				\end{itemize}
 	\section{Første skritt på veien}
-		\paragraph{}
-			Saken må fremmes i H2(Hovedutvalg for helse og omsorg), og det må selges for hva det er: Redningen for folkehelsa i Nedre Eiker. - Dette kan vi ikke operere oss ut av, forteller sykehusdirektør i Helse midt Gunnar Bovim under en presentasjon av Helseundersøkelsen i Nord-Trøndelag(HUNT). Bak ham flimrer en utvikling av overvekt og dermed sykelighet i befolkningen som er skremmende. Dette må formidles helt ned i kommunene og oppgavene må flyttes øverst på dagsorden. Man må forberede seg på en langvarig forpliktelse. Det må befolkningen også.
+		\paragraph{Ikke glem politisk forankring\\}
+			Saken må fremmes i H2(Hovedutvalg for helse og omsorg), og det må selges for hva det er: Redningen for framtidens helsebudsjetter i Nedre Eiker. Dett er selvsagt litt karikert, men jeg tillater meg å sitere Gunnar Bovim, direktør i Helse Midtnorge: - Dette kan vi ikke operere oss ut av, forteller han under en presentasjon av Helseundersøkelsen i Nord-Trøndelag(HUNT) ved introduksjonskurset i samfunnsmedisin i 2012. Bak ham flimrer en utvikling av overvekt og dermed sykelighet i befolkningen i Nord- Trøndelag de siste 3 tiår. Kommunen må forberede seg på en langvarig forpliktelse. Det må befolkningen også.
 
-		\paragraph{}
-			Allmennlegen i meg kjenner på håpløsheten i denne monumentale oppgaven, men samfunnsmedisineren kjenner på mulighetene. 
+		\paragraph{Det er mørkest før lysningen\\}
+			Allmennlegen i meg kjenner på håpløsheten i denne monumentale oppgaven. Skal vi forebygge oss ut av helseproblemene, den demografiske utviklingen og de evig økende helsebudjettene? Om ikke annet vil utgjenvning av sosiale forkjeller føre til bedre livskvalitet for mange.  
+
+\listoffigures
 
  \renewcommand{\bibname}{Kilder:}
               \begin{thebibliography}{99}
